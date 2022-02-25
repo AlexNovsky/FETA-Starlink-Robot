@@ -2,8 +2,8 @@
 Documentation  This is some basic info about the whole suite
 Resource  ./Resources/Common/CommonWeb.robot
 Resource  ./Resources/MainPageApp.robot
-#Test Setup  Begin Web Test
-#Test Teardown  End Web Test
+Suite Setup  Begin Web Test
+Suite Teardown  End Web Test
 
 # Copy/paste the line below into Terminal to execute:
 # robot -d results tests/starlink.robot
@@ -11,15 +11,14 @@ Resource  ./Resources/MainPageApp.robot
 *** Variables ***
 
 *** Test Cases ***
-Should be able to access to main page
-    [Documentation]  Check if main page is loaded
+Should be able to access to main page and navigate to Learn More
+    [Documentation]  Check if main page and info pages are available and loaded properly
     [Tags]  Regression
     MainPageApp.Go to main page
-    MainPageApp.Verify page loaded
-
-Should be able to navigate to Learn more pages
-
-
+    MainPageApp.Verify main page loaded
+    MainPageApp.Verify Sattelites info available
+    MainPageApp.Verify Rural info available
+    MainPageApp.Verify Preserving Sky Info Available
 
 
 
