@@ -19,6 +19,9 @@ Should be able to access to main page and navigate to Learn More
     MainPageApp.Verify Sattelites info available
     MainPageApp.Verify Rural info available
     MainPageApp.Verify Preserving Sky Info Available
+    MainPageApp.Verify Clear Space Info Available
+    MainPageApp.Verify By Spacex Info Available
+    MainPageApp.Verify Open Positions Page Available
 
 
 
