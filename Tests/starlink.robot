@@ -22,6 +22,9 @@ Should be able to access to main page and navigate to Learn More
     MainPageApp.Verify Clear Space Info Available
     MainPageApp.Verify By Spacex Info Available
     MainPageApp.Verify Open Positions Page Available
+    MainPageApp.Verify Starlink Kit Page Available
+    MainPageApp.Verify Clear View Page Available
+    MainPageApp.Verify Apps Available For Downloading
 
 
 

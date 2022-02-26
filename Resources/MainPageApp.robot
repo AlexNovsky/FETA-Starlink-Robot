@@ -34,3 +34,16 @@ Verify By Spacex Info Available
 Verify Open Positions Page Available
     MainPageLanding.Open Positions Page Available
     MainPageLanding.MainPage loaded
+
+Verify Starlink Kit Page Available
+    MainPageLanding.Kit Page Available
+    MainPageLanding.MainPage loaded
+
+Verify Clear View Page Available
+    MainPageLanding.Clear View Page Available
+    MainPageLanding.MainPage loaded
+
+Verify Apps Available For Downloading
+    MainPageLanding.AndroidApp Download
+    MainPageLanding.MainPage loaded
+    MainPageLanding.IOSApp Download
