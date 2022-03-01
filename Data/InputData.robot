@@ -1,6 +1,6 @@
 *** Variables ***
 # Configuration
-${BROWSER} =  safari
+${BROWSER} =  chrome
 ${ENVIRONMENT} =  prod
 ${BASE_URL} =  https://www.starlink.com/
 
