@@ -11,20 +11,22 @@ Suite Teardown  End Web Test
 *** Variables ***
 
 *** Test Cases ***
-Should be able to access to main page and navigate to Learn More
+Should be able to access to main page and navigate to all links
     [Documentation]  Check if main page and info pages are available and loaded properly
     [Tags]  Regression
     MainPageApp.Go to main page
     MainPageApp.Verify main page loaded
     MainPageApp.Verify Sattelites info available
-    MainPageApp.Verify Rural info available
-    MainPageApp.Verify Preserving Sky Info Available
-    MainPageApp.Verify Clear Space Info Available
-    MainPageApp.Verify By Spacex Info Available
-    MainPageApp.Verify Open Positions Page Available
-    MainPageApp.Verify Starlink Kit Page Available
-    MainPageApp.Verify Clear View Page Available
-    MainPageApp.Verify Apps Available For Downloading
+#    MainPageApp.Verify Rural info available
+#    MainPageApp.Verify Preserving Sky Info Available
+#    MainPageApp.Verify Clear Space Info Available
+#    MainPageApp.Verify By Spacex Info Available
+#    MainPageApp.Verify Open Positions Page Available
+#    MainPageApp.Verify Starlink Kit Page Available
+#    MainPageApp.Verify Clear View Page Available
+#    MainPageApp.Verify Apps Available For Downloading
+    MainPageApp.Verify Privacy Policy Address Page Available
+    MainPageApp.Verify Privacy Policy Bottom Page Available
 
 
 

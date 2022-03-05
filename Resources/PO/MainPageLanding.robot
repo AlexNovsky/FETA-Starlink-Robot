@@ -49,11 +49,11 @@ Keeping Clear Info Available
     Switch Window  Starlink
 
 By Spacex Info Available
-#    Run Keyword And Ignore Error  Scroll Element Into View  //*[@id="highspeed"]/div[2]/div/div[2]
     Run Keyword And Ignore Error  Scroll Element Into View  //*[@id="keeping-clean"]/div[2]/div/div[2]
     Run Keyword And Ignore Error  Scroll Element Into View  //*[@id="engineered"]/div[2]/div/div
+    Sleep  2s
     Click element  //a[@href="https://www.spacex.com/"]
-    Sleep  3s
+#    Sleep  2s
     Switch window  SpaceX
     Wait Until Page Contains Element  //*[@id="logo"]
     Close Window
@@ -71,23 +71,25 @@ Open Positions Page Available
 Kit Page Available
     Run Keyword And Ignore Error  Scroll Element Into View  //*[@id="highspeed"]/div[2]/div/div[2]
     Run Keyword And Ignore Error  Scroll Element Into View  //*[@id="plugin"]/div[2]/div/div
+    Sleep  2s
     Click element  //a[contains(@href, "/kit")]
     Wait Until Page Contains  What's in the box
     Go Back
 
 Clear View Page Available
-    Run Keyword And Ignore Error  Scroll Element Into View  //*[@id="rural"]/div[2]/div/div[2]
-    Run Keyword And Ignore Error  Scroll Element Into View  //*[@id="plugin"]/div[2]/div/div
+    Run Keyword And Ignore Error  Scroll Element Into View  //*[@id="highspeed"]/div[2]/div/div[2]
+    Run Keyword And Ignore Error  Scroll Element Into View  //*[@id="plugin"]/div[2]/div
+    Sleep  2s
     Click element  //a[contains(@href, "support.starlink.com/?topic=4badc520-cf8e-b3aa-dd49-b731686d5bf1")]
     Wait Until Page Contains  Why do I need a clear “field of view” to use Starlink?
     Go Back
 
 AndroidApp Download
-    Sleep  2s
     Run Keyword And Ignore Error  Scroll Element Into View  //*[@id="highspeed"]/div[2]/div/div[2]
     Run Keyword And Ignore Error  Scroll Element Into View  //*[@id="plugin"]/div[2]/div/div
-    Click element  //a[contains(@href, "com.starlink.mobile")]
     Sleep  2s
+    Click element  //a[contains(@href, "com.starlink.mobile")]
+#    Sleep  2s
     Switch window  Starlink - Apps on Google Play
     Wait Until Page Contains Element  //*[@id="fcxH9b"]
     Close Window
@@ -95,11 +97,29 @@ AndroidApp Download
 
 IOSApp Download
     Click element  //a[contains(@href, "starlink/id1537177988")]
-#    //*[contains(@href, "apple")]
-#    //*[contains(@href, "google")]
-#    //a[.="Download for Android"]
     Sleep  2s
     Switch Window  NEW
     Wait Until Page Contains  Starlink
     Close Window
     Switch Window  Starlink
+
+Privacy Policy Address Page Available
+    Press Keys  None  HOME
+    Sleep  1s
+    Click element  //*[contains(@href, "legal")]
+    Sleep  2s
+    Switch window  NEW
+    Wait Until Page Contains  Starlink Legal
+    Close Window
+    Switch Window  Starlink
+
+Privacy Policy Bottom Page Available
+    Press Keys  None  END
+    Sleep  3s
+    Click element  //a[contains(@href, "starlink.com/legal")]
+    Sleep  2s
+    Switch window  NEW
+    Wait Until Page Contains  Starlink Legal
+    Close Window
+    Switch Window  Starlink
+    Sleep  3s

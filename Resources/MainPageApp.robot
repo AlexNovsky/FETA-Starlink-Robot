@@ -47,3 +47,11 @@ Verify Apps Available For Downloading
     MainPageLanding.AndroidApp Download
     MainPageLanding.MainPage loaded
     MainPageLanding.IOSApp Download
+
+Verify Privacy Policy Address Page Available
+    MainPageLanding.Privacy Policy Address Page Available
+    MainPageLanding.MainPage loaded
+
+Verify Privacy Policy Bottom Page Available
+    MainPageLanding.Privacy Policy Bottom Page Available
+    MainPageLanding.MainPage loaded
