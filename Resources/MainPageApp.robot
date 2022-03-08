@@ -11,6 +11,10 @@ Go to main page
 Verify Main page loaded
     MainPageLanding.Main Page Loaded
 
+Verify Logo Clicable
+    MainPageLanding.Logo Clicable
+    MainPageLanding.MainPage Loaded
+
 Verify Sattelites Info Available
     MainPageLanding.Sattelites info available
     MainPageLanding.MainPage Loaded
@@ -54,4 +58,8 @@ Verify Privacy Policy Address Page Available
 
 Verify Privacy Policy Bottom Page Available
     MainPageLanding.Privacy Policy Bottom Page Available
+    MainPageLanding.MainPage loaded
+
+Verify Visit Spacex Available
+    MainPageLanding.Visit Spacex Info Available
     MainPageLanding.MainPage loaded

@@ -12,6 +12,10 @@ Navigate to
 Main Page Loaded
     Wait Until Page Contains  Order Starlink
 
+Logo Clicable
+    Click Element  xpath=/html/body/app-root/public-header-navigation/div/mat-drawer-container/mat-drawer-content/div/div/div/a
+    Wait Until Page Contains  Order Starlink
+
 Sattelites Info Available
     Run Keyword And Ignore Error  Scroll Element Into View  //*[@id="highspeed"]/div[2]/div/div[2]
     Sleep  2s
@@ -114,12 +118,25 @@ Privacy Policy Address Page Available
     Switch Window  Starlink
 
 Privacy Policy Bottom Page Available
+    Run Keyword And Ignore Error  Scroll Element Into View  xpath=/html/body/app-root/starlink-footer
     Press Keys  None  END
     Sleep  3s
-    Click element  //a[contains(@href, "starlink.com/legal")]
+    Click element  xpath=/html/body/app-root/starlink-footer/footer/div[1]/span[3]/a
+#    //a[contains(@href, "starlink.com/legal")]
     Sleep  2s
-    Switch window  NEW
     Wait Until Page Contains  Starlink Legal
+    Sleep  3s
+    Go Back
+
+Visit Spacex Info Available
+    Run Keyword And Ignore Error  Scroll Element Into View  xpath=/html/body/app-root/starlink-footer
+    Press Keys  None  END
+    Sleep  2s
+    Click element  xpath=/html/body/app-root/starlink-footer/footer/div[2]/a
+#    //a[@href="https://www.spacex.com/"]
+#    Sleep  2s
+    Switch window  SpaceX
+    Wait Until Page Contains Element  //*[@id="logo"]
     Close Window
     Switch Window  Starlink
-    Sleep  3s
+

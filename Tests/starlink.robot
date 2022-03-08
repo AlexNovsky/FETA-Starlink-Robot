@@ -16,17 +16,19 @@ Should be able to access to main page and navigate to all links
     [Tags]  Regression
     MainPageApp.Go to main page
     MainPageApp.Verify main page loaded
+    MainPageApp.Verify Logo Clicable
     MainPageApp.Verify Sattelites info available
-#    MainPageApp.Verify Rural info available
-#    MainPageApp.Verify Preserving Sky Info Available
-#    MainPageApp.Verify Clear Space Info Available
-#    MainPageApp.Verify By Spacex Info Available
-#    MainPageApp.Verify Open Positions Page Available
-#    MainPageApp.Verify Starlink Kit Page Available
-#    MainPageApp.Verify Clear View Page Available
-#    MainPageApp.Verify Apps Available For Downloading
+    MainPageApp.Verify Rural info available
+    MainPageApp.Verify Preserving Sky Info Available
+    MainPageApp.Verify Clear Space Info Available
+    MainPageApp.Verify By Spacex Info Available
+    MainPageApp.Verify Open Positions Page Available
+    MainPageApp.Verify Starlink Kit Page Available
+    MainPageApp.Verify Clear View Page Available
+    MainPageApp.Verify Apps Available For Downloading
     MainPageApp.Verify Privacy Policy Address Page Available
     MainPageApp.Verify Privacy Policy Bottom Page Available
+    MainPageApp.Verify Visit Spacex Available
 
 
 
