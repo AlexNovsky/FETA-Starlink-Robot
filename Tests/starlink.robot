@@ -12,7 +12,7 @@ Suite Teardown  End Web Test
 
 *** Test Cases ***
 Should be able to access to main page and navigate to all links
-    [Documentation]  Check if main page and info pages are available and loaded properly
+    [Documentation]  Check if main page, all links and Info pages are available and loaded properly
     [Tags]  Regression
     MainPageApp.Go to main page
     MainPageApp.Verify main page loaded
@@ -29,14 +29,11 @@ Should be able to access to main page and navigate to all links
     MainPageApp.Verify Privacy Policy Address Page Available
     MainPageApp.Verify Privacy Policy Bottom Page Available
     MainPageApp.Verify Visit Spacex Available
+    MainPageApp.Verify Visit Spacex Available
 
 
 
-#Should be able to access Sign In page
-#    [Documentation]  Check if main page is loaded and Sign In page is available
-#    [Tags]  Regression
-#    StarlinkSignInApp.go to landing page
-#
+
 #Main Starlink page should be opened successfully
 #    [Documentation]  Check if address is available
 #    [Tags]  Smoke
