@@ -16,7 +16,7 @@ Should be able to access to main page and navigate to all links
     [Tags]  Regression
     MainPageApp.Go to main page
     MainPageApp.Verify main page loaded
-    MainPageApp.Verify Logo Clicable
+    MainPageApp.Verify Logo Clickable
     MainPageApp.Verify Sattelites info available
     MainPageApp.Verify Rural info available
     MainPageApp.Verify Preserving Sky Info Available
@@ -29,25 +29,5 @@ Should be able to access to main page and navigate to all links
     MainPageApp.Verify Privacy Policy Address Page Available
     MainPageApp.Verify Privacy Policy Bottom Page Available
     MainPageApp.Verify Visit Spacex Available
-    MainPageApp.Verify Visit Spacex Available
-
-
-
-
-#Main Starlink page should be opened successfully
-#    [Documentation]  Check if address is available
-#    [Tags]  Smoke
-##    Open Browser  ${BASE_URL}  ${BROWSER}
-#    Wait Until Page Contains  Order Starlink
-#    Click element  //*[@alt="Open Menu"]
-##    Input Text  //*[@id="service-input"]  3629 Keechi Creek Dr, Prosper, TX 75078, USA
-#    Sleep  1s
-#    Click element  sign in
-##    Press Keys  None  RETURN
-#    Sleep  3s
-#    #Execute Manual Step  Do something
-##    Click Button  //*[@type="submit"]
-##    Sleep  3s
-##    Close Browser
 
 *** Keywords ***

@@ -11,8 +11,8 @@ Go to main page
 Verify Main page loaded
     MainPageLanding.Main Page Loaded
 
-Verify Logo Clicable
-    MainPageLanding.Logo Clicable
+Verify Logo Clickable
+    MainPageLanding.Logo Clickable
     MainPageLanding.MainPage Loaded
 
 Verify Sattelites Info Available
