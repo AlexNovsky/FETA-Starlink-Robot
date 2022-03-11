@@ -16,7 +16,7 @@ Should be able to access to main page and navigate to all links
     [Documentation]  Check if main page, all links and Info pages are available and loaded properly
     [Tags]  Regression
     MainPageApp.Go to main page
-    MainPageApp.Verify main page loaded  #Could be removed due changes in Go to main page script
+    MainPageApp.Verify main page loaded
     MainPageApp.Verify Logo Clickable
     MainPageApp.Verify Sattelites info available
     MainPageApp.Verify Rural info available
@@ -35,8 +35,8 @@ Should be able to check service availability for valid address
     [Documentation]  Check if main page, all links and Info pages are available and loaded properly
     [Tags]  Regression
     OrderAddressApp.Go to main page
-#    OrderAddressApp.Verify Valid Address Submitted
-#    OrderAddressApp.Verify Order Page Loaded
+#    OrderAddressApp.Verify Valid Address Submitted    #Dissabled due webapp automation restrictions
+#    OrderAddressApp.Verify Order Page Loaded          #Dissabled due webapp automation restrictions
     OrderAddressApp.Verify Invalid Address Show Error
 
 *** Keywords ***

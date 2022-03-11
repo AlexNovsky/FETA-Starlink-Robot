@@ -16,8 +16,8 @@ Main Page Loaded
 Valid Address Submitted
     Press Keys  ${ADDRESS}  ${VALID ORDER ADDRESS}
     Sleep  1s
-#    Press Keys  ${ADDRESS}  UP  #Emulating user's inputs
-#    Press Keys  ${ADDRESS}  RETURN  #Emulating user's inputs
+    Press Keys  ${ADDRESS}  UP  #Emulating user's inputs
+    Press Keys  ${ADDRESS}  RETURN  #Emulating user's inputs
     Click Element  //*[@type="submit"]
 
 Order Page Loaded
