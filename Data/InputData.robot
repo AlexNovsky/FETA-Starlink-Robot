@@ -3,8 +3,8 @@
 ${BROWSER} =  chrome
 ${ENVIRONMENT} =  prod
 ${BASE_URL} =  https://www.starlink.com/
-
-# Input Data
+${PREMIUM_URL} =  https://www.starlink.com/premium
+#Input Data
 ${VALID ORDER ADDRESS}  3629 Keechi Creek Dr, Prosper, TX 75078, USA
 ${INVALID ORDER ADDRESS}  101110010101101010011001010110100101001100
 &{REGISTERED_USER}  Email=tsekhanovskii@hotmail.com  Password=)=&HQ_y^L6a*m^
