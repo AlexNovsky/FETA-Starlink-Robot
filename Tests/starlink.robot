@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation  This is some basic info about the whole suite
+Documentation  Page object-oriented framework for testing Starlink.com website using Robot Framework syntax
 Resource  ./Resources/Common/CommonWeb.robot
 Resource  ./Resources/MainPageApp.robot
 Resource  ./Resources/OrderAddressApp.robot
@@ -32,7 +32,8 @@ Should be able to access to main page and navigate to all links
     MainPageApp.Verify Visit Spacex Available
 
 Should be able to check service availability for valid address
-    [Documentation]  Check if main page, all links and Info pages are available and loaded properly
+    [Documentation]  Check if user is able to check availability of Starlink service in particular area and
+    [Documentation]  start process of ordering service
     [Tags]  Regression
     OrderAddressApp.Go to main page
 #    OrderAddressApp.Verify Valid Address Submitted    #Dissabled due webapp automation restrictions
