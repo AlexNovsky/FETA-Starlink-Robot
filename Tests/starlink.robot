@@ -3,6 +3,8 @@ Documentation  Page object-oriented framework for testing Starlink.com website u
 Resource  ./Resources/Common/CommonWeb.robot
 Resource  ./Resources/MainPageApp.robot
 Resource  ./Resources/OrderAddressApp.robot
+Resource  ./Resources/ResidentialPageApp.robot
+
 Suite Setup  Begin Web Test
 Suite Teardown  End Web Test
 
@@ -39,5 +41,10 @@ Should be able to check service availability for valid address
 #    OrderAddressApp.Verify Valid Address Submitted    #Dissabled due webapp automation restrictions
 #    OrderAddressApp.Verify Order Page Loaded          #Dissabled due webapp automation restrictions
     OrderAddressApp.Verify Invalid Address Show Error
+
+Should be able to click on Residential menu item
+    ResidentialPageApp.Go to main page
+    ResidentialPageApp.Verify main page loaded
+    ResidentialPageApp.Verify Residential page loaded
 
 *** Keywords ***
