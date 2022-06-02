@@ -4,6 +4,8 @@ ${BROWSER} =  chrome
 ${ENVIRONMENT} =  prod
 ${BASE_URL} =  https://www.starlink.com/
 ${PREMIUM_URL} =  https://www.starlink.com/premium
+${BUSINESS_URL} =  https://www.starlink.com/business
+
 #Input Data
 ${VALID ORDER ADDRESS}  11211 Goodnight Ln, Dallas, TX 75229, USA
 ${INVALID ORDER ADDRESS}  101110010101101010011001010110100101001100

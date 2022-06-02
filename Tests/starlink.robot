@@ -4,6 +4,7 @@ Resource  ./Resources/Common/CommonWeb.robot
 Resource  ./Resources/MainPageApp.robot
 Resource  ./Resources/OrderAddressApp.robot
 Resource  ./Resources/ResidentialPageApp.robot
+Resource  ./Resources/BusinessPageApp.robot
 
 Suite Setup  Begin Web Test
 Suite Teardown  End Web Test
@@ -43,8 +44,22 @@ Should be able to check service availability for valid address
     OrderAddressApp.Verify Invalid Address Show Error
 
 Should be able to click on Residential menu item
+    [Documentation]  Check if Residential menu item is clickable and page loaded
+    [Tags]  Regression
     ResidentialPageApp.Go to main page
     ResidentialPageApp.Verify main page loaded
     ResidentialPageApp.Verify Residential page loaded
+
+Should be able to acess Business page and navigate to all links and read verbiage for Business
+    [Documentation]  Check if Business page loaded from the main menu and contains all required information and links
+    [Tags]  Regression
+    BusinessPageApp.Go to main page
+    BusinessPageApp.Verify Main page loaded
+    BusinessPageApp.Verify Business page loaded
+    BusinessPageApp.Verify Page contains address textfield
+    BusinessPageApp.Verify Page contains Business page verbiage
+    BusinessPageApp.Verify Page contains Apps links
+    BusinessPageApp.Verify Page contains hyperlinks
+
 
 *** Keywords ***
