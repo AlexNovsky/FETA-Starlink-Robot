@@ -13,7 +13,8 @@ Main Page Loaded
     Wait Until Page Contains  Order Starlink
 
 Business Page Loaded
-    Click Element  //a[contains(@href, "/business")]
+#    Click Element  //a[contains(@href, "/business")]
+    Go to  ${BUSINESS_URL}
     Wait Until Page Contains   Starlink Business
 
 Page Contains address texfield
@@ -27,8 +28,8 @@ Page Contains Business Verbiage
     Page Should Contain  For more information on Starlink Business, please see our
 
 Page Contains Apps Links
-    Page Should Contain Button  //a[normalize-space()='Download for iOS']
-    Page Should Contain Button  //a[normalize-space()='Download for Android']
+    Page Should Contain Element  //a[contains(@href, "starlink/id1537177988")]
+    Page Should Contain Element  //a[contains(@href, "com.starlink.mobile")]
 
 Page Contains Hyperlinks
     Page Should Contain Link  //a[normalize-space()='Privacy Policy']
