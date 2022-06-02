@@ -13,7 +13,8 @@ Main Page Loaded
     Wait Until Page Contains  Order Starlink
 
 Logo Clickable
-    Click Element  xpath=/html/body/app-root/public-header-navigation/div/mat-drawer-container/mat-drawer-content/div/div/div/a
+    Click Element  //div[@class='starlink-logo']
+#    Click Element  xpath=/html/body/app-root/public-header-navigation/div/mat-drawer-container/mat-drawer-content/div/div/div/a
     Wait Until Page Contains  Order Starlink
 
 Sattelites Info Available
@@ -108,7 +109,8 @@ AndroidApp Download
     Sleep  1s
     Click element  //a[contains(@href, "com.starlink.mobile")]
     Switch window  Starlink - Apps on Google Play
-    Wait Until Page Contains Element  //*[@id="fcxH9b"]
+    Wait Until Page Contains Element  //span[normalize-space()='Starlink']
+    #    //*[@id="fcxH9b"]
     Close Window
     Switch Window  Starlink
 
@@ -135,8 +137,7 @@ Privacy Policy Bottom Page Available
     [Documentation]  Strings above may be removed for testing on any different browsers than Chrome.
     Press Keys  None  END
     Sleep  1s
-    Click element  xpath=/html/body/app-root/starlink-footer/footer/div[1]/span[3]/a
-#    //a[contains(@href, "starlink.com/legal")]
+    Click element  //a[normalize-space()='Privacy & Legal']
     Wait Until Page Contains  Starlink Legal
     Sleep  1s
     Go Back
@@ -146,8 +147,7 @@ Visit Spacex Info Available
     [Documentation]  Strings above may be removed for testing on any different browsers than Chrome.
     Press Keys  None  END
     Sleep  1s
-    Click element  xpath=/html/body/app-root/starlink-footer/footer/div[2]/a
-#    //a[@href="https://www.spacex.com/"]
+    Click element  //a[normalize-space()='spacex.com']
     Switch window  SpaceX
     Wait Until Page Contains Element  //*[@id="logo"]
     Close Window

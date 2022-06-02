@@ -13,8 +13,7 @@ Main Page Loaded
     Wait Until Page Contains  Order Starlink
 
 Business Page Loaded
-#    Click Element  //a[contains(@href, "/business")]
-    Go to  ${BUSINESS_URL}
+    Click Element  //div[@class="premium"]/a[contains(@href, "/business")]
     Wait Until Page Contains   Starlink Business
 
 Page Contains address texfield
