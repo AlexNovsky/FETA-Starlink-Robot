@@ -5,6 +5,7 @@ Resource  ./Resources/MainPageApp.robot
 Resource  ./Resources/OrderAddressApp.robot
 Resource  ./Resources/ResidentialPageApp.robot
 Resource  ./Resources/BusinessPageApp.robot
+Resource  ./Resources/RVPageApp.robot
 
 Suite Setup  Begin Web Test
 Suite Teardown  End Web Test
@@ -60,6 +61,18 @@ Should be able to acess Business page and navigate to all links and read verbiag
     BusinessPageApp.Verify Page contains Business page verbiage
     BusinessPageApp.Verify Page contains Apps links
     BusinessPageApp.Verify Page contains hyperlinks
+
+Should be able to acess new RV page and navigate to all links and read verbiage for current RV page
+    [Documentation]  Check if Business page loaded from the main menu and contains all required information and links
+    [Tags]  Regression
+    RVPAgeApp.Go to main page
+    RVPAgeApp.Verify Main page loaded
+    RVPAgeApp.Verify RV Page Loaded
+    RVPAgeApp.Verify Active Coverage Link Accessible
+    RVPAgeApp.Verify Page contains address textfield
+    RVPAgeApp.Verify Page contains RV page verbiage
+    RVPAgeApp.Verify Page contains Apps links
+    RVPAgeApp.Verify Page contains hyperlinks
 
 
 *** Keywords ***
